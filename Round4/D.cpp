@@ -28,7 +28,7 @@ void solve1()
     memset(d,0,sizeof(d));
     for(int i=1;i<=n;i++)
     {
-        while(tail>=head && a[d[tail]]>a[i])
+        while(tail>=head && a[d[tail]]>=a[i])
             tail--;
         d[++tail] = i;
         if(i-d[head]==k)
@@ -47,7 +47,7 @@ void solve2()
     memset(d,0,sizeof(d));
     for(int i=1;i<=n;i++)
     {
-        while(tail>=head && a[d[tail]]<a[i])
+        while(tail>=head && a[d[tail]]<=a[i])
             tail--;
         d[++tail] = i;
         if(i-d[head]==k)
