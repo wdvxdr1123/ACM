@@ -1,3 +1,3 @@
 #Tips
 
-The coder is a newbee
+The author is a newbee
